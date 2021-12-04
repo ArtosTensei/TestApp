@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dQtfYleBVCjutn/wVaO81kA8RMzJXceoOpyNl6j94cVks0CvskPyYV/P4i1MMeDX2a+Dd0XftjPqCCdeqaqYUg==",
+  "dgSpecHash": "8ZsPTGC7Xp+vvFUyWMbrxpIM2vFh/nakSPe+W8FNC97rynfbUaKCM5lJhvVkVGEbUPDZheB0MlaAlXxcqCn6Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artos\\source\\repos\\testdb\\testdb\\testdb.csproj",
+  "projectFilePath": "C:\\Users\\artos\\OneDrive\\Desktop\\test\\TestApp\\testdb\\testdb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artos\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\artos\\.nuget\\packages\\bricelam.entityframeworkcore.pluralizer\\1.0.0\\bricelam.entityframeworkcore.pluralizer.1.0.0.nupkg.sha512",

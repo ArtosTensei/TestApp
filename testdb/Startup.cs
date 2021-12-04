@@ -32,8 +32,12 @@ namespace testdb
 
             services.AddControllers();
 
-            services.AddDbContext<testdbContext>(options => options.UseMySql("server=127.0.0.1;database=testdb;user=root;password=Russia2020!", 
-                new MySqlServerVersion(new Version(10, 1, 40))));
+            services.AddDbContext<testdbContext>(options =>
+            {
+                var connetionString = Configuration.GetConnectionString("testdb");
+                options.UseMySql(connetionString,
+                    new MySqlServerVersion(new Version(10, 1, 40)));
+            }); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

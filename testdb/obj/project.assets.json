@@ -8516,11 +8516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artos\\source\\repos\\testdb\\testdb\\testdb.csproj",
+      "projectUniqueName": "C:\\Users\\artos\\OneDrive\\Desktop\\test\\TestApp\\testdb\\testdb.csproj",
       "projectName": "testdb",
-      "projectPath": "C:\\Users\\artos\\source\\repos\\testdb\\testdb\\testdb.csproj",
+      "projectPath": "C:\\Users\\artos\\OneDrive\\Desktop\\test\\TestApp\\testdb\\testdb.csproj",
       "packagesPath": "C:\\Users\\artos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artos\\source\\repos\\testdb\\testdb\\obj\\",
+      "outputPath": "C:\\Users\\artos\\OneDrive\\Desktop\\test\\TestApp\\testdb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
