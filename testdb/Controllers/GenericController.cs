@@ -47,7 +47,7 @@ namespace testdb.Controllers
 
         // DELETE api/<GenericController>/5
         [HttpDelete("{id}")]
-        public IActionResult DeleteId(object id) 
+        public IActionResult Deleteid(int id) 
         { 
           _genericService.Delete(id);
             _genericService.Save();
