@@ -14,6 +14,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using testdb.Models;
+using testdb.IService;
+using testdb.Service;
+using Microsoft.AspNetCore.Http;
 
 namespace testdb
 {
@@ -30,14 +33,25 @@ namespace testdb
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
 
             services.AddDbContext<testdbContext>(options =>
             {
                 var connetionString = Configuration.GetConnectionString("testdb");
                 options.UseMySql(connetionString,
                     new MySqlServerVersion(new Version(10, 1, 40)));
-            }); 
+            });
+           
+            services.AddTransient<IGenericService<User>, GenericRepository<User>>();
+            services.AddTransient<IGenericService<Order>, GenericRepository<Order>>();
+            services.AddTransient<IGenericService<Role>, GenericRepository<Role>>();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
