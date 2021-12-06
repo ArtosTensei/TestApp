@@ -38,20 +38,20 @@ namespace testdb.Controllers
 
         // POST api/<GenericController>
         [HttpPost]
-        public IActionResult Post([FromBody] T obj)
+        public List<T> Post([FromBody] T obj)
         {
            _genericService.Insert(obj);
             _genericService.Save();
-            return RedirectToAction(nameof(Index));
+            return _genericService.GetAll();
         }
 
         // DELETE api/<GenericController>/5
         [HttpDelete("{id}")]
-        public IActionResult Deleteid(int id) 
+        public List<T> Deleteid(int id) 
         { 
           _genericService.Delete(id);
             _genericService.Save();
-            return RedirectToAction(nameof(Index));
+            return _genericService.GetAll();
         }
     }
 }
