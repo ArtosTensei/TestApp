@@ -38,10 +38,16 @@ namespace testdb.Controllers
 
         // POST api/<GenericController>
         [HttpPost]
-        public void Post([FromBody] T obj) => _genericService.Insert(obj);
+        public void Post([FromBody] T obj)
+        {
+            _genericService.Insert(obj);
+        }
 
         // DELETE api/<GenericController>/5
         [HttpDelete("{id}")]
-        public void Delete(object id) => _genericService.Delete(id);
+        public void Delete(object id) 
+        { 
+            _genericService.Delete(id); 
+        }
     }
 }
