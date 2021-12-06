@@ -7,3 +7,4 @@
 
 БД написана была на MySQL, через Workbench
 
+Подключение записано в ConnectionString
