@@ -8,3 +8,5 @@
 БД написана была на MySQL, через Workbench
 
 Подключение записано в ConnectionString
+
+Generic Repository были добавлны
