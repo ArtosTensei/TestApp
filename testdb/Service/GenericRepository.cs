@@ -38,5 +38,10 @@ namespace testdb.Service
             T exists = table.Find(id);
             table.Remove(exists);
         }
+
+        public void Save()
+        {
+            _context.SaveChanges();
+        }
     }
 }
