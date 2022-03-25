@@ -9,4 +9,4 @@
 
 Подключение записано в ConnectionString
 
-Generic Repository были добавлны
+Generic Repository были добавлены
